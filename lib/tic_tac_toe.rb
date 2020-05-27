@@ -59,7 +59,7 @@ def play
       return "Cat's Game!"
      end
   if !(over? || won? || draw?)
-      turn
+      play
     end
   end
  
