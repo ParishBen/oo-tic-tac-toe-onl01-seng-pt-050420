@@ -30,13 +30,14 @@ def move(index, current_player)
   @board[index] = current_player
 end
 
-def position_taken?(index)
- @board[index] != " " || @board[index] != "" || !@board[index].nil?? true : false
-
+def position_taken?(location)
+  @board[location] != " " && @board[location] != ""
 end
+
 def valid_move?(index)
   index.between?(0,8) && !position_taken?(index)
-  end
+end
+
 
 def turn
   input = gets.strip
