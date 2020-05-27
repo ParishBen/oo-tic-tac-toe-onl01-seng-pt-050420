@@ -51,7 +51,6 @@ end
 
 def play
   puts "Please enter 1-9:"
-     turn 
   if over? && won?
       return "Congratulations #{won?[0]}!"
     end
@@ -61,6 +60,7 @@ def play
   if !(over? || won? || draw?)
       turn
     end
+    play
   end
  
  
