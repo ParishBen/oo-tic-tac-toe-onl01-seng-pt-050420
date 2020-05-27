@@ -60,7 +60,6 @@ def play
   if !(over? || won? || draw?)
       turn
     end
-    play
   end
  
  
