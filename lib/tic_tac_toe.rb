@@ -54,7 +54,7 @@ def play
     turn until over?
      if winner ? puts "Congratulations #{winner}!" : "Cat's Game!"
   end
-end
+ end
 end 
  
  def current_player
