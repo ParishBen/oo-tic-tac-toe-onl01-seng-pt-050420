@@ -40,6 +40,7 @@ end
 
 
 def turn
+  puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(index)
@@ -49,19 +50,7 @@ def turn
   end
 end
 
-def play
-  puts "Please enter 1-9:"
-  turn
-  if over? && won?
-      return "Congratulations #{won?[0]}!"
-    end
-  if over? && draw?
-      return "Cat's Game!"
-     end
-  if !(over? || won? || draw?)
-      play
-    end
-  end
+
  
  
  def current_player
