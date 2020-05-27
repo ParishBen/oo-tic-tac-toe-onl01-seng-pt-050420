@@ -57,7 +57,7 @@ def play
        else puts "Cat's Game!"
   end
  end
-end 
+ 
  
  def current_player
  turn_count % 2 == 0 ? "X" : "O"
@@ -92,4 +92,4 @@ end
      @board[winning_combo.first]
    end
  end
-
+end
