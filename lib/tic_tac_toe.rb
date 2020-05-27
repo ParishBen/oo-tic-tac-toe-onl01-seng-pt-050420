@@ -33,6 +33,7 @@ end
 def position_taken?(index)
   if @board[index] != " " || @board[index] != ""
 true 
+else false
 end
 end
 def valid_move?(index)
