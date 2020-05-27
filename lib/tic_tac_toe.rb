@@ -31,7 +31,7 @@ def move(index, current_player)
 end
 
 def position_taken?(index)
- @board[index] != " " || @board[index] != "" || !@board[index].nil?? true:false
+ @board[index] != " " || @board[index] != "" || !@board[index].nil?? true : false
 
 end
 def valid_move?(index)
