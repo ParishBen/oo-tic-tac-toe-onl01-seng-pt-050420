@@ -52,7 +52,9 @@ end
 
 def play
     turn until over?
-     if winner ? puts "Congratulations #{winner}!" : "Cat's Game!"
+     if winner  
+       puts "Congratulations #{winner}!" 
+       else puts "Cat's Game!"
   end
  end
 end 
