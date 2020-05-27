@@ -31,10 +31,8 @@ def move(index, current_player)
 end
 
 def position_taken?(index)
-  if @board[index] != " " || @board[index] != "" || !@board[index].nil?
-true 
-else false
-end
+ @board[index] != " " || @board[index] != "" || !@board[index].nil?? true:false
+
 end
 def valid_move?(index)
   index.between?(0,8) && !position_taken?(index)
